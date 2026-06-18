@@ -37,7 +37,7 @@ meu_projeto_etl/
 
 1. Clone o repositório para a sua máquina local:
    \`\`\`bash
-   git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
+   git clone https://github.com/mazimcosta/DataEnginner-Projects
    \`\`\`
 2. Navegue até a pasta do projeto:
    \`\`\`bash
