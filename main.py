@@ -2,7 +2,7 @@
 
 # Primeiro pipeline:
 import json
-
+import psycopg2
 import csv
 caminho_arquivo="data/raw/Teen_Mental_Health_Dataset.csv"
 def extrair_dados(caminho_arquivo:str):
@@ -75,9 +75,57 @@ def carregar_dados(dados:dict):
     with open('data/processed/relatorio.json','w',encoding='utf-8') as arquivo:
         json.dump(dados,arquivo,ensure_ascii=False,indent=4)
 
+def carrgar_banco(dados):
+    lista=[]
+    
+     
+    
+
+    for dado in dados:
+        try:
+            idade=int(dado.get('age'))
+        except:
+            continue
+        
+        genero=dado.get('gender')
+        plataforma=dado.get('platform_usage')
+        lista.append((idade,genero,plataforma))
+
+    query=("""INSERT INTO raw_mental_health (idade,genero,plataforma) VALUES (%s,%s,%s) """)
+
+    try:
+        conexao=psycopg2.connect(
+        dbname="banco",
+        user="postgres",
+        password="senha",
+        host="localhost",
+        port="5432"
+        )
+        cursor=conexao.cursor()
+        
+        cursor.executemany(query,lista)
+        conexao.commit()
+    
+    except Exception as error:
+        if 'conexao' in locals():
+            conexao.rollback()
+            print(f'Erro falha na insercao:{error}')
+        
+    finally:
+        if 'cursor' in locals():
+            cursor.close()
+        if 'conexao' in locals():
+            conexao.close()
+        print('Conexao encerrada')
+
+
+
+
+
+
 if __name__=="__main__":
     dados_brutos=extrair_dados(caminho_arquivo)
     dados_processados=transformar_dados(dados_brutos)
     carregar_dados(dados_processados)
-    
+    carrgar_banco(dados_brutos)   
 
