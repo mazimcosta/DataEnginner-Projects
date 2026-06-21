@@ -1,0 +1,21 @@
+produto,preco,quantidade,categoria
+Notebook,3500.00,2,Eletronicos
+Mouse,80.50,5,Eletronicos
+Teclado,150.00,3,Eletronicos
+Mesa,700.00,1,Moveis
+Cadeira,450.00,2,Moveis
+Monitor,1200.00,1,Eletronicos
+,99.90,4,Eletronicos
+Webcam,abc,2,Eletronicos
+Headset,250.00,,Eletronicos
+Impressora,-500.00,1,Eletronicos
+Cabo HDMI,35.00,-3,Eletronicos
+Armario,900.00,1,
+Luminaria,120.00,2,Decoracao
+Mousepad,0,10,Eletronicos
+Suporte Notebook,150.00,0,Eletronicos
+Cadeira Gamer,1500.00,1,Moveis
+SSD,399.90,2,Eletronicos
+Hub USB,89.90,3,Eletronicos
+     ,50.00,1,Eletronicos
+Microfone,299.90,abc,Eletronicos
