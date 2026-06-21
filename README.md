@@ -1,54 +1,165 @@
-# 📊 ETL Pipeline: Teen Mental Health Data
+# Projetos Data Engineer
 
+Repositório dedicado ao desenvolvimento de projetos práticos de Engenharia de Dados utilizando Python, SQL e ferramentas do ecossistema de dados.
 
-## 📝 Sobre o Projeto
-Este é um mini-pipeline de dados construído do zero em Python puro. O objetivo principal do projeto foi processar um dataset bruto (`.csv`) sobre o uso de redes sociais e saúde mental de adolescentes, aplicar regras de negócio em lote e exportar um relatório consolidado em formato JSON.
+## Objetivo
 
-O grande diferencial deste projeto é o foco em **Arquitetura de Software e Performance de Memória**. Em vez de utilizar bibliotecas pesadas de análise de dados (como Pandas) que carregam toda a base na memória RAM, o pipeline processa o arquivo linha a linha (Streaming/I/O) em tempo linear **O(N)**.
+Este repositório documenta minha evolução na área de Engenharia de Dados por meio da construção de projetos práticos focados em:
 
-## ⚙️ Arquitetura ETL Modular
-O código adota o padrão de projeto ETL (Extract, Transform, Load), dividindo as responsabilidades em funções isoladas:
-
-1. **Extract (`extrair_dados`):** Abre a conexão com o arquivo CSV de forma segura utilizando o gerenciador de contexto `with open` e lê os dados brutos utilizando `csv.DictReader`.
-2. **Transform (`transformar_dados`):** Aplica a lógica de negócio, limpando os dados, calculando métricas (médias, contagens, valores máximos e mínimos) e ignorando linhas corrompidas sem derrubar o pipeline.
-3. **Load (`carregar_dados`):** Persiste o resultado final estruturado em um novo arquivo `.json` no disco local, utilizando tratamento de codificação `UTF-8`.
-
-## 🛡️ Decisões de Engenharia
-* **Zero Dependências:** Construído sem bibliotecas externas para demonstrar domínio absoluto de estruturas de dados nativas do Python (Dicionários, Listas, Loops).
-* **Programação Defensiva:** Implementação de blocos `try/except` com a instrução `continue` para pular registros sujos ou em branco, garantindo que o sistema não sofra *crash* em produção.
-* **Otimização de Algoritmo:** Substituição de funções de ordenamento custosas (`sorted()`) pela lógica nativa de comparação contínua ("pointer approach") para descobrir a plataforma de rede social mais utilizada.
-
-## 📂 Estrutura do Repositório
-
-\`\`\`text
-meu_projeto_etl/
-│
-├── data/
-│   ├── raw/                # Onde o CSV original (sujo) deve ser colocado
-│   └── processed/          # Onde o relatório final relatorio.json é gerado
-│
-├── src/
-│   └── main.py             # Arquivo orquestrador do pipeline ETL
-│
-└── README.md
-\`\`\`
-
-## 🚀 Como Executar
-
-1. Clone o repositório para a sua máquina local:
-   \`\`\`bash
-   git clone https://github.com/mazimcosta/DataEnginner-Projects
-   \`\`\`
-2. Navegue até a pasta do projeto:
-   \`\`\`bash
-   cd meu_projeto_etl
-   \`\`\`
-3. Garanta que o arquivo `Teen_Mental_Health_Dataset.csv` está na pasta `data/raw/`.
-4. Execute o orquestrador principal:
-   \`\`\`bash
-   python src/main.py
-   \`\`\`
-5. O resultado processado estará disponível em `data/processed/relatorio.json`.
+* Manipulação e processamento de dados
+* Pipelines ETL
+* SQL e modelagem de dados
+* Bancos de dados relacionais
+* Boas práticas de engenharia de software
+* Tratamento e validação de dados
+* Arquitetura de aplicações de dados
 
 ---
-*Projeto desenvolvido como parte da trilha de especialização em Engenharia de Dados.*
+
+## Tecnologias Utilizadas
+
+### Linguagens
+
+* Python
+* SQL
+
+### Bibliotecas Nativas
+
+* csv
+* json
+
+### Ferramentas
+
+* Git
+* GitHub
+* SQLite
+* PostgreSQL (em andamento)
+
+---
+
+## Estrutura do Repositório
+
+```text
+projetos-data-engineer/
+
+├── pipeline-v1/
+├── pipeline-v2/
+├── pipeline-v3/
+├── docs/
+└── README.md
+```
+
+---
+
+## Projetos
+
+### Pipeline ETL V1
+
+Primeira implementação do processo ETL.
+
+Conceitos praticados:
+
+* Extract
+* Transform
+* Load
+* Leitura de arquivos CSV
+* Manipulação de listas e dicionários
+* Organização básica de código
+
+---
+
+### Pipeline ETL V2
+
+Pipeline ETL completo com validação de dados e geração de relatórios.
+
+Funcionalidades:
+
+* Leitura de CSV utilizando DictReader
+* Escrita de CSV utilizando DictWriter
+* Geração de relatórios JSON
+* Validação de dados
+* Tratamento de exceções
+* Separação entre registros válidos e inválidos
+
+Validações implementadas:
+
+* Nome vazio
+* Idade vazia
+* Idade inválida
+* Idade negativa
+* Gênero vazio
+* Gênero inválido
+
+Arquitetura:
+
+```text
+extract.py
+schema.py
+transform.py
+load.py
+main.py
+```
+
+Testes realizados:
+
+* Arquivo vazio
+* Coluna obrigatória ausente
+* Arquivo sem cabeçalho
+* Caminho inválido
+* Registros inconsistentes
+
+---
+
+### Pipeline ETL V3
+
+Projeto em desenvolvimento.
+
+Objetivos:
+
+* Processamento de vendas
+* Validação de schema
+* Cálculo de faturamento
+* Relatórios de auditoria
+* Consolidação dos conceitos de ETL
+
+---
+
+## Principais Aprendizados
+
+Durante os projetos desenvolvidos foram praticados conceitos fundamentais de Engenharia de Dados:
+
+* Separação de responsabilidades
+* Validação de schema
+* Qualidade de dados
+* Tratamento de erros
+* Processamento de arquivos
+* Estruturas de dados em Python
+* Pensamento orientado a pipelines
+* Transferência de conhecimento entre domínios de negócio
+
+---
+
+## Roadmap Atual
+
+Concluído:
+
+* Python Básico
+* Estruturas de Dados
+* Programação Orientada a Objetos
+* SQL Intermediário
+* ETL V1
+* ETL V2
+
+Próximos passos:
+
+* ETL V3
+* PostgreSQL
+* Modelagem de Dados
+* Consultas Analíticas
+* Engenharia de Dados
+
+---
+
+## Autor
+
+Desenvolvedor Python e estudante de Engenharia de Dados, construindo projetos práticos para consolidar conhecimentos em backend, bancos de dados e pipelines de processamento de dados.
