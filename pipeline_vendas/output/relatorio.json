@@ -1,0 +1,15 @@
+{
+    "validas": 10,
+    "invalidas": 10,
+    "erros": {
+        "produto_vazio": 2,
+        "preco_vazio": 0,
+        "preco_invalido": 1,
+        "preco_negativo_zero": 2,
+        "quantidade_vazia": 1,
+        "quantidade_invalida": 1,
+        "quantidade_negativa_zero": 2,
+        "categoria_vazia": 1
+    },
+    "faturamento_total": 13462.0
+}

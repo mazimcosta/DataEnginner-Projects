@@ -1,0 +1,11 @@
+produto,preco,quantidade,categoria,faturamento
+Notebook,3500.0,2,Eletronicos,7000.0
+Mouse,80.5,5,Eletronicos,402.5
+Teclado,150.0,3,Eletronicos,450.0
+Mesa,700.0,1,Moveis,700.0
+Cadeira,450.0,2,Moveis,900.0
+Monitor,1200.0,1,Eletronicos,1200.0
+Luminaria,120.0,2,Decoracao,240.0
+Cadeira Gamer,1500.0,1,Moveis,1500.0
+SSD,399.9,2,Eletronicos,799.8
+Hub USB,89.9,3,Eletronicos,269.7
