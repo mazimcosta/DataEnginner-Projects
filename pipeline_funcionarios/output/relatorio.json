@@ -1,0 +1,14 @@
+{
+    "validos": 10,
+    "invalidos": 10,
+    "erros": {
+        "nome_vazio": 2,
+        "email_invalido": 3,
+        "salario_vazio": 1,
+        "salario_invalido": 1,
+        "salario_negativo_ou_zero": 2,
+        "departamento_vazio": 1
+    },
+    "folha_total": 56500.0,
+    "media_salarial": 5650.0
+}

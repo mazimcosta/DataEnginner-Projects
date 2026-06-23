@@ -1,0 +1,11 @@
+nome,email,salario,departamento,erro
+,joao@email.com,4000,Tecnologia,nome_vazio
+Maria,,3000,RH,email_invalido
+Paulo,pauloemail.com,4500,Financeiro,email_invalido
+Ricardo,ricardo@emailcom,5000,Comercial,email_invalido
+Sandra,sandra@email.com,,Marketing,salario_vazio
+Bruno,bruno@email.com,abc,Tecnologia,salario_invalido
+Carla,carla@email.com,-1500,RH,salario_negativo_ou_zero
+Felipe,felipe@email.com,0,Suporte,salario_negativo_ou_zero
+Renata,renata@email.com,5200,,departamento_vazio
+     ,espaco@email.com,2500,Financeiro,nome_vazio

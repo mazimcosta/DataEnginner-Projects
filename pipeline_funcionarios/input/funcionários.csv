@@ -1,0 +1,21 @@
+nome,email,salario,departamento
+Ana,ana@email.com,2500,Financeiro
+Carlos,carlos@email.com,5000,Tecnologia
+Marcos,marcos@email.com,9000,Engenharia
+Fernanda,fernanda@email.com,3200,RH
+Juliana,juliana@email.com,7500,Comercial
+Pedro,pedro@email.com,2800,Suporte
+Lucas,lucas@email.com,4200,Tecnologia
+Patricia,patricia@email.com,6800,Financeiro
+Roberto,roberto@email.com,12000,Diretoria
+Amanda,amanda@email.com,3500,Marketing
+,joao@email.com,4000,Tecnologia
+Maria,,3000,RH
+Paulo,pauloemail.com,4500,Financeiro
+Ricardo,ricardo@emailcom,5000,Comercial
+Sandra,sandra@email.com,,Marketing
+Bruno,bruno@email.com,abc,Tecnologia
+Carla,carla@email.com,-1500,RH
+Felipe,felipe@email.com,0,Suporte
+Renata,renata@email.com,5200,
+     ,espaco@email.com,2500,Financeiro
