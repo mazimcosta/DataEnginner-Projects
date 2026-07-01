@@ -1,0 +1,16 @@
+id_venda,id_cliente,filial,categoria,produto,quantidade,preco_unitario,desconto,vendedor,data_venda
+1001,1," fortaleza ","eletrônicos",Notebook,1,"R$ 4.200,00",,carlos,2025-01-10
+1002,2,Fortaleza,periféricos,Mouse,2,"180",20,mAria,2025-01-10
+1003,3," recife ","ELETRÔNICOS",Monitor,1,"R$ 1.300,50",,jo;ao,2025-01-11
+1004,4,Salvador,armazenamento,SSD,2,"450,90",30,"C,arlos",2025-01-11
+1005,5,Curitiba,Periféricos,Teclado,1,"R$ 350",15,Marc;os,2025-01-12
+1006,6,,periféricos,Headset,1,"380.00",,lucas,2025-01-12
+1007,7,Fortaleza,Eletrônicos,"Notebook Gamer",1,"R$ 5.100,00",300,FERNANDA,2025-01-13
+1008,8,Recife,periféricos,"Mouse Gamer",3,"150,75",,ana clara,2025-01-13
+1009,9,"Belo Horizonte","ELETRÔNICOS","Monitor 27",1,"1.200,00",,pa;tricia,2025-01-14
+1010,10,Fortaleza,armazenamento,"HD Externo",2,"R$ 550,00",,"C,srlos",2025-01-14
+1011,11,Curitiba,Periféricos,"Teclado Mecânico",2,"R$ 420,00",,Patrícia,2025-01-15
+1012,12,,Eletrônicos,"Notebook Pro",1,"7800",500,,2025-01-15
+1013,13,Recife,periféricos,"Webcam HD",2,"R$ 310,00",,diego,2025-01-16
+1014,14,Fortaleza,armazenamento,"SSD 1TB",,"650,00",50,Carlos,2025-01-16
+1015,15,Salvador,Eletrônicos,"Smart TV",1,"texto",,Amanda,2025-01-17

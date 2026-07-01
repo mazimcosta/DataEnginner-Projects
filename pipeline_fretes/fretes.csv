@@ -1,0 +1,21 @@
+id_entrega,id_cliente,filial,cidade,motorista,status_entrega,peso_kg,valor_frete,data_entrega
+5001,801,Sul,São Paulo,Carlos,entregue,120,"R$ 1.250,00",2025-03-01
+5002,802,NORTE,rio de janeiro,mAria,ENTREGUE,85,980.50,2025-03-01
+5003,803,,Curitiba,C,srlos,Pendente,40,"750,00",2025-03-02
+5004,804,Leste,Belo Horizonte,FERNANDA,entregue,,450.00,2025-03-02
+5005,805,Oeste,porto alegre,Patricia,Cancelada,30,texto,2025-03-03
+5006,,Sul,Salvador,Carlos,Entregue,95,"R$ 980,00",2025-03-03
+5007,807,Centro,Recife,joSE,ENTREGUE,-15,1200.00,2025-03-04
+5008,808,norte,Fortaleza,Ana;,entregue,70,"R$ 650,50",2025-03-04
+5009,809,SUL,Florianópolis,LUCAS,Pendente,55,580.75,2025-03-05
+5010,810,,Manaus,C,srlos,ENTREGUE,90,"R$ 1.800,00",2025-03-05
+5011,811,Oeste,Goiânia,mARCOS,entregue,0,350.00,2025-03-06
+5012,812,Leste,Brasília,FERNANDA,Entregue,110,"1.250,00",2025-03-06
+5013,813,Sul,São Luís,JoAo,entregue,65,720,2025-03-07
+5014,814,Norte,Vitória,MaRcOs,Pendente,45,"R$ 430,90",2025-03-07
+5015,815,Leste,Natal,C,srlos,ENTREGUE,80,,2025-03-08
+5016,816,Oeste,Maceió,Patr;icia,entregue,100,"R$ 1.050,00",2025-03-08
+5017,817,Sul,Aracaju,CARLOS,Entregue,150,1850.90,2025-03-09
+5018,818,Centro,Teresina,maria,ENTREGUE,60,"890,00",2025-03-09
+5019,819,,Campo Grande,JoSe,Cancelada,75,"R$ 910,00",2025-03-10
+5020,820,Norte,Palmas,FERNANDA,entregue,-5,500.00,2025-03-10

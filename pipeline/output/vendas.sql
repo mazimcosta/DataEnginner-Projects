@@ -1,0 +1,14 @@
+CREATE TABLE vendas (
+id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+id_venda INTEGER NOT NULL UNIQUE,
+id_cliente INTEGER NOT NULL,
+filial VARCHAR(50) DEFAULT('Nao informado'),
+categoria VARCHAR(50)NOT NULL,
+produto VARCHAR(50) NOT NULL,
+quantidade INTEGER NOT NULL,
+preco_unitario NUMERIC(10,2) NOT NULL,
+desconto NUMERIC(10,2) DEFAULT 0,
+vendedor VARCHAR(50) DEFAULT('Venda online'),
+data_venda DATE NOT NULL,
+valor_total NUMERIC(10,2) NOT NULL
+)
