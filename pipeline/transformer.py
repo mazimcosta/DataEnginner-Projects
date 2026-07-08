@@ -1,4 +1,5 @@
 import pandas as pd
+import logging
 
 def limpar_preco(valor):
     valor = str(valor).replace('R$','').strip()
@@ -57,6 +58,7 @@ def criar_valor_total(df:pd.DataFrame):
 
 
 def processar_dados(df:pd.DataFrame):
+    logging.info("Iniciando limpeza de dados")
     df =tratar_nulos(df)
     df['preco_unitario'] = df['preco_unitario'].apply(limpar_preco)
     df =remover_invalidos(df)
@@ -64,5 +66,5 @@ def processar_dados(df:pd.DataFrame):
     df['categoria'] = df['categoria'].apply(limpar_texto)
     df['vendedor'] = df['vendedor'].apply(limpar_vendedor)
     df =criar_valor_total(df)
-
+    logging.info('Limpeza concluida com sucesso')
     return df

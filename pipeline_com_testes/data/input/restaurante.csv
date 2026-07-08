@@ -1,0 +1,13 @@
+id_pedido,mesa,item,categoria,quantidade,preco_unitario,status,pagamento
+1,12,Pizza Calabresa,Prato Principal,2,"45.90",pago,cartao
+2,8,Refrigerante,Bebida,3,"8.50",pago,pix
+3,5,Hamburguer,Prato Principal,-1,"32.00",pago,dinheiro
+4,,Batata Frita,Acompanhamento,1,"18.00",pago,cartao
+5,2,,Bebida,2,"7.00",pago,pix
+6,4,Suco Natural,Bebida,1,"abc",pago,cartao
+7,7,Petit Gateau,Sobremesa,1,"22,50",cancelado,
+8,3,Café,Bebida,0,"6.00",pago,dinheiro
+,9,Lasanha,Prato Principal,1,"38.90",pago,cartao
+10,10,Pudim,Sobremesa,2,"12.00",pendente,pix
+11,11,Água,Bebida,1,"5.00",pago,
+12,6,Strogonoff,Prato Principal,2,"41.50",pago,cartao
