@@ -1,0 +1,21 @@
+
+name: Pipeline CI
+on:
+    push:
+jobs:
+    testes:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Baixar codigo
+              uses: actions/checkout@v4
+            
+            - name: Instalar python
+              uses: actions/setup-python@v5
+              with: 
+                python-version: "3.13"
+              
+            - name: Instalar dependencias
+              run: pip install -r requirements.txt
+            
+            - name: Executar  testes
+              run: pytest tests/
