@@ -16,6 +16,8 @@ jobs:
               
             - name: Instalar dependencias
               run: pip install -r requirements.txt
+              working-directory: pipeline_com_testes
             
             - name: Executar  testes
               run: pytest tests/
+              working-directory: pipeline_com_testes
