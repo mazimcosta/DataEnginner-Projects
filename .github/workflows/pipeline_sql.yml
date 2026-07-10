@@ -10,18 +10,18 @@ jobs:
 
         steps:
             - name: Baixar repositorio
-             uses: actions/checkout@v4
+              uses: actions/checkout@v4
 
             - name: Instalar Python
-             uses: actions/setup-python@v5
-             with:
+              uses: actions/setup-python@v5
+              with:
                 python-version: "3.13"
             
             - name: Instalar dependencias
-             run: pip install -r requirements.txt
-             working-directory: pipeline_sql
+              run: pip install -r requirements.txt
+              working-directory: pipeline_sql
 
             - name: Executar testes
-             run: pytest tests/
-             working-directory: pipeline_sql
+              run: pytest tests/
+              working-directory: pipeline_sql
 
