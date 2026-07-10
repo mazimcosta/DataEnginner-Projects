@@ -1,0 +1,16 @@
+id_venda,data_venda,id_cliente,nome_cliente,cidade,categoria,produto,quantidade,preco_unitario,desconto,status_pagamento
+1,2026-07-01,101,Ana Silva,Fortaleza,Hortifruti,Banana,3,4.5,0.0,pago
+2,2026-07-01,102,Carlos Lima,Recife,Limpeza,Detergente,2,2.8,0.5,pago
+3,2026-07-02,103,Marina Souza,Fortaleza,Bebidas,Suco Natural,1,8.9,0.0,pago
+4,2026-07-02,104,João Pedro,Natal,Padaria,Pão Francês,10,0.8,0.0,pago
+5,2026-07-03,101,Ana Silva,Fortaleza,Bebidas,Refrigerante,2,7.5,1.0,pago
+6,2026-07-03,105,Beatriz Costa,Salvador,Hortifruti,Maçã,5,3.2,0.0,cancelado
+7,2026-07-04,106,Rafael Alves,Recife,Limpeza,Sabão em Pó,1,18.9,2.0,pago
+8,2026-07-04,107,Luana Rocha,Fortaleza,Padaria,Bolo Simples,1,15.0,0.0,pago
+9,2026-07-05,108,Pedro Martins,Natal,Bebidas,Água Mineral,6,2.0,0.0,pago
+10,2026-07-05,102,Carlos Lima,Recife,Hortifruti,Laranja,4,2.5,0.0,pago
+11,2026-07-06,109,Fernanda Dias,Salvador,Limpeza,Água Sanitária,2,5.5,0.5,pago
+12,2026-07-06,110,Bruno Nunes,Fortaleza,Padaria,Pão Integral,2,6.9,0.0,pago
+13,2026-07-07,111,Camila Torres,Recife,Bebidas,Café,1,14.9,0.0,pago
+14,2026-07-07,112,Igor Mendes,Natal,Hortifruti,Uva,2,9.8,1.5,pago
+15,2026-07-08,113,Patrícia Gomes,Fortaleza,Limpeza,Desinfetante,3,4.7,0.0,pago
