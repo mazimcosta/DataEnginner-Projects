@@ -1,27 +1,36 @@
 
-name: pipeline_medalhao
+name: Pipeline Medalhão
 
 on:
-    push:
+  push:
+    paths:
+      - "pipeline_sql/**"
+      - ".github/workflows/pipeline_sql.yml"
+
+  pull_request:
+    paths:
+      - "pipeline_sql/**"
+      - ".github/workflows/pipeline_sql.yml"
 
 jobs:
-    testes:
-        runs-on: ubuntu_latest
+  testes:
+    runs-on: ubuntu-latest
 
-        steps:
-            - name: Baixar repositorio
-              uses: actions/checkout@v4
+    defaults:
+      run:
+        working-directory: pipeline_sql
 
-            - name: Instalar Python
-              uses: actions/setup-python@v5
-              with:
-                python-version: "3.13"
-            
-            - name: Instalar dependencias
-              run: pip install -r requirements.txt
-              working-directory: pipeline_sql
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
 
-            - name: Executar testes
-              run: pytest tests/
-              working-directory: pipeline_sql
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
 
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Executar testes
+        run: pytest tests/
