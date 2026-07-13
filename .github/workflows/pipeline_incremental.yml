@@ -3,6 +3,9 @@ name: Pipeline incremental
 
 on: 
     push:
+      paths:
+      - "pipeline_incremental/**"
+      - ".github/workflows/pipeline_incremental.yml"
 
 jobs:
     tests:
