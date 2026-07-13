@@ -41,15 +41,17 @@ GROUP BY categoria
 ORDER BY SUM(valor_liquido) DESC;
 
 INSERT INTO gold_faturamento_cliente(
+    id_cliente,
     nome_cliente,
     faturamento_total
 
 )
 SELECT
+id_cliente,
 nome_cliente,
 SUM(valor_liquido)
 FROM silver_mercado
-GROUP BY nome_cliente
+GROUP BY id_cliente,nome_cliente
 ORDER BY SUM(valor_liquido) DESC;
 
 INSERT INTO gold_faturamento_cidade(

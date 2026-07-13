@@ -1,0 +1,9 @@
+id_venda,data_venda,id_cliente,nome_cliente,cidade,categoria,produto,quantidade,preco_unitario,desconto,status_pagamento
+1003,2026-07-02,203,Carla Mendes,Salvador,Medicamentos,Antialergico,1,25.00,3.00,pago
+1006,2026-07-03,206,Felipe Alves,Recife,Medicamentos,Vitamina C,2,30.00,0.00,pago
+1008,2026-07-04,208,Henrique Costa,Maceio,Medicamentos,Antitermico,2,18.00,0.00,cancelado
+1004,2026-07-02,204,Daniel Rocha,Maceio,Beleza,Protetor Solar,2,42.00,4.00,pago
+1011,2026-07-06,211,Karina Melo,Maceio,Medicamentos,Antibiotico,1,48.00,3.00,pago
+1012,2026-07-06,212,Lucas Barros,Salvador,Higiene,Desodorante,3,14.00,2.00,pago
+1013,2026-07-07,213,Mariana Lopes,Recife,Beleza,Perfume,1,80.00,8.00,pago
+1014,2026-07-07,214,Nicolas Santos,Aracaju,Medicamentos,Xarope,0,27.00,0.00,pago

@@ -39,15 +39,26 @@ def salvar_banco(df:pd.DataFrame):
     cursor=None
     conexao=None
     query=""" INSERT INTO bronze_mercado (id_venda,data_venda,id_cliente,nome_cliente,cidade,categoria,produto,quantidade,preco_unitario,desconto,status_pagamento)
-    VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
+    VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
+    ON CONFLICT (id_venda)
+                DO UPDATE SET
+                data_venda = EXCLUDED.data_venda,
+                id_cliente = EXCLUDED.id_cliente,
+                nome_cliente = EXCLUDED.nome_cliente,
+                cidade = EXCLUDED.cidade,
+                categoria = EXCLUDED.categoria,
+                produto= EXCLUDED.produto,
+                quantidade = EXCLUDED.quantidade,
+                preco_unitario = EXCLUDED.preco_unitario,
+                desconto = EXCLUDED.desconto,
+                status_pagamento = EXCLUDED.status_pagamento;"""
 
     try:
         conexao=conectar()
         cursor=conexao.cursor()
 
         for linha in df.itertuples():
-            cursor.execute(query,(
-                linha.id_venda,
+            cursor.execute(query,(linha.id_venda,
                 linha.data_venda,
                 linha.id_cliente,
                 linha.nome_cliente,
@@ -57,8 +68,10 @@ def salvar_banco(df:pd.DataFrame):
                 linha.quantidade,
                 linha.preco_unitario,
                 linha.desconto,
-                linha.status_pagamento
-            ))
+                linha.status_pagamento 
+                ))
+                
+            
         conexao.commit()
     
     except psycopg2.Error as error:

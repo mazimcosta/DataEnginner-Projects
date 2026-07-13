@@ -1,6 +1,6 @@
 
 CREATE TABLE IF NOT EXISTS bronze_mercado(
-    id_venda INTEGER NOT NULL,
+    id_venda INTEGER NOT NULL PRIMARY KEY,
     data_venda DATE NOT NULL,
     id_cliente INTEGER NOT NULL,
     nome_cliente VARCHAR(100) NOT NULL,
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS bronze_mercado(
 );
 
 CREATE TABLE IF NOT EXISTS silver_mercado(
-    id_venda INTEGER NOT NULL,
+    id_venda INTEGER NOT NULL PRIMARY KEY,
     data_venda DATE NOT NULL,
     id_cliente INTEGER NOT NULL,
     nome_cliente VARCHAR(100) NOT NULL,
@@ -34,7 +34,8 @@ CREATE TABLE IF NOT EXISTS gold_faturamento_categoria(
 );
 
 CREATE TABLE IF NOT EXISTS gold_faturamento_cliente(
-    nome_cliente VARCHAR(100) NOT NULL PRIMARY KEY,
+    id_cliente INTEGER NOT NULL PRIMARY KEY,
+    nome_cliente VARCHAR(100) NOT NULL,
     faturamento_total  NUMERIC(8,2) NOT NULL
 );
 

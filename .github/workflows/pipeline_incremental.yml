@@ -1,0 +1,27 @@
+
+name: Pipeline incremental
+
+on: 
+    push:
+
+jobs:
+    tests:
+        runs-on: ubuntu-latest
+        defaults:
+            run:
+                working-directory: pipeline_incremental
+        
+        steps:
+            - name: Baixar repositorio
+              uses: actions/checkout@v4
+
+            - name: Instalar python
+              uses: actions/python-setup@v5
+              with:
+                python-version: "3.13"
+            
+            - name: Instalando dependencias
+              run: pip install -r requirements.txt
+            
+            - name: Executando testes
+              run: pytest tests/unit/

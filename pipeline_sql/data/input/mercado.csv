@@ -14,3 +14,4 @@ id_venda,data_venda,id_cliente,nome_cliente,cidade,categoria,produto,quantidade,
 13,2026-07-07,111,Camila Torres,Recife,Bebidas,Café,1,14.90,0,pago
 14,2026-07-07,112,Igor Mendes,Natal,Hortifruti,Uva,2,9.80,1.5,pago
 15,2026-07-08,113,Patrícia Gomes,Fortaleza,Limpeza,Desinfetante,3,4.70,0,pago
+999,2026-07-11,114,Antonio Marcos,Fortaleza,Carnes,Picanha,2,99.0,5,pago
