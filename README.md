@@ -1,3 +1,25 @@
+PROJETOS PRINCIPAIS
+
+1. Pipeline Café
+   - Bronze, Silver e Gold
+   - validação com Pydantic
+   - idempotência
+   - testes
+   - GitHub Actions
+
+2. Pipeline de API
+   - extração HTTP
+   - tratamento de falhas
+   - validação de payload
+   - persistência
+
+3. Pipeline incremental
+   - checkpoint
+   - prevenção de duplicação
+   - carga incremental
+   - auditoria
+
+
 # Evolução de Pipelines de Dados com Python e PostgreSQL
 
 Este repositório reúne uma sequência de projetos desenvolvidos durante minha formação em Engenharia de Dados.
