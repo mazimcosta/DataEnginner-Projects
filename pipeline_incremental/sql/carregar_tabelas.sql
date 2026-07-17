@@ -97,3 +97,13 @@ SUM(quantidade)
 FROM silver_farmacia
 GROUP BY produto
 ORDER BY SUM(quantidade) DESC;
+
+INSERT INTO gold_ticket_venda(
+    id_venda,
+    ticket_medio
+)
+SELECT
+id_venda,
+SUM(valor_liquido)/COUNT(id_venda)
+FROM silver_farmacia
+GROUP BY id_venda;

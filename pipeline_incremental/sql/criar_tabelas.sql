@@ -70,3 +70,9 @@ VALUES(
 )
 ON CONFLICT (nome_pipeline)
 DO NOTHING;
+
+
+CREATE TABLE IF NOT EXISTS gold_ticket_venda(
+    id_venda INTEGER NOT NULL PRIMARY KEY,
+    ticket_medio NUMERIC(8,2) NOT NULL
+);

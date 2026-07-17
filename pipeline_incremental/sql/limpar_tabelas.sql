@@ -8,3 +8,5 @@ TRUNCATE TABLE gold_faturamento_cidade;
 TRUNCATE TABLE gold_produto_vendido;
 
 TRUNCATE TABLE gold_quantidade_produto;
+
+TRUNCATE TABLE gold_ticket_venda;
