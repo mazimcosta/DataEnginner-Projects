@@ -1,0 +1,25 @@
+name: Pipeline cafe vendas
+
+on:
+    push:
+
+jobs:
+    testes:
+        runs-on: ubuntu-latest
+        defaults:
+            run:
+                working-directory: pipeline_cafe
+        steps:
+            - name: Baixar repositorio
+              uses: actions/checkout@v5
+
+            - name: Instalar python
+              uses: actions/setup-python@v5
+              with:
+                python-version: "3.13"
+            
+            - name: Instalar dependencias
+              run: pip install -r requirements.txt
+
+            - name: Executar testes
+              run: pytest tests/unit/
